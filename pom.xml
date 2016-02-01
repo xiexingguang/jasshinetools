@@ -22,4 +22,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <finalName>javatools</finalName>
+                    <descriptors>
+                        <descriptor>release.xml</descriptor>
+                    </descriptors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
