@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userRole">
+
+    <resultMap id="usr" type="com.jasshine.jbatis.RoleDto">
+        <result property="id" column="f_crm_id"/>
+        <result property="roleName" column="f_corp_id"/>
+        <result property="resid" column="f_type"/>
+        <result property="createTime" column="f_contact_time"/>
+    </resultMap>
+
+    <select id="queryUsers" parameterType="Roledto" resultType="Roledto"
+            >
+        <![CDATA[
+        select * from acl_roles t where t.id = #{id}
+        ]]>
+    </select>
+
+    <select id="queryUserss" parameterType="Roledto" resultType="Roledto"
+         >
+        <![CDATA[
+        select * from acl_roles t where t.id = #{id}
+        ]]>
+    </select>
+</mapper>

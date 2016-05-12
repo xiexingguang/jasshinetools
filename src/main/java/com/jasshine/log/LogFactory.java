@@ -5,5 +5,5 @@ package com.jasshine.log;
  */
 public class LogFactory {
 
-
+                
 }
